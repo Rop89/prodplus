@@ -2,15 +2,32 @@ import React from 'react';
 import { Grommet, Box, Button, DropButton, Heading, Text } from 'grommet';
 import PropTypes from 'prop-types';
 import { Close } from 'grommet-icons';
-import { grommet } from 'grommet/themes';
+
+
+
+const theme = {
+  global: {
+    colors: {
+      text: '#FFFFFF'
+      }
+  },
+  button: {
+    primary: {
+      color: '#6FFFB0'
+    }
+  },
+}
 
 const DropContent = ({ onClose }) => (
   <Box pad="small">
-    <Box direction="row" justify="between" align="center">
+    <Box direction="row" justify="between" align="center" >
       <Heading level={3} margin="small">
         Heading
       </Heading>
-      <Button icon={<Close />} onClick={onClose} />
+      <Button 
+      icon={<Close />} 
+      onClick={onClose}
+      />
     </Box>
     <Text>Content</Text>
   </Box>
@@ -31,17 +48,21 @@ const NavbarButton = () => {
 
 
   return (
-    <Grommet theme={grommet}>
+    <Grommet theme={theme}>
       <Box 
       align="center" 
-      pad="large">
+      pad="large"
+      margin={{top:"large"}}
+      >
         <DropButton
           label="Open"
           open={open}
           onOpen={onOpen}
           onClose={onClose}
           dropContent={<DropContent onClose={onClose} />}
-          dropProps={{ align: { top: 'bottom' } }}
+          dropProps={{ align: { top: 'bottom' }  }}
+          primary
+          color = '#6FFFB0'
         />
       </Box>
     </Grommet>
