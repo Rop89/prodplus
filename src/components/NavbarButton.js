@@ -13,7 +13,7 @@ const theme = {
   },
   button: {
     primary: {
-      color: '#6FFFB0'
+      color: '#A7F3D0'
     }
   },
 }
@@ -62,7 +62,7 @@ const NavbarButton = () => {
           dropContent={<DropContent onClose={onClose} />}
           dropProps={{ align: { top: 'bottom' }  }}
           primary
-          color = '#6FFFB0'
+          color = '#A7F3D0'
         />
       </Box>
     </Grommet>
