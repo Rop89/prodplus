@@ -12,9 +12,13 @@ class NavbarButton extends Component {
     this.setState({ loaded: true });
   }
   render() {
+    function handleClick(e) {
+      e.preventDefault();
+      console.log('The link was clicked.');
+    }
     return (
       <div>
-        <div className="rounded-full h-16 w-16 flex items-center justify-center bg-green-200 mt-8 mr-6 "></div>
+        <div className="rounded-full h-16 w-16 flex items-center justify-center bg-green-200 mt-8 mr-6 " onClick={handleClick}></div>
       </div>
     );
   }

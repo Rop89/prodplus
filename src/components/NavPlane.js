@@ -7,27 +7,27 @@ const PlaneVariants = {
   animationOne: {
     x: 0,
     y: 0,
-    transition: { duration: 1.0 },
+    transition: { duration: 1.0},
   },
   animationTwo: {
     x: -210,
     y: -230,
-    transition: { duration: 1.0 },
+    transition: { duration: 1.0},
   },
   animationThree: {
     x: -150,
     y: -170,
-    transition: { duration: 1.0 },
+    transition: { duration: 1.0},
   },
   animationFour: {
     x: -270,
     y: -250,
-    transition: { duration: 1.0 },
+    transition: { duration: 1.0},
   },
   animationFive: {
-    x: -20,
-    y: -650,
-    transition: { duration: 1.0 },
+    x: -15,
+    y: -670,
+    transition: { duration: 1.0},
   },
 };
 export default function NavPlane() {
